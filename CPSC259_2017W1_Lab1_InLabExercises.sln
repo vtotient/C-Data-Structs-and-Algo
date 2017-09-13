@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CPSC259_2017W1_Lab1_InLabExercises", "CPSC259_2017W1_Lab1_InLabExercises\CPSC259_2017W1_Lab1_InLabExercises.vcxproj", "{7B32EC31-3B59-4497-B6B4-286861B665CD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CPSC259_2017W1_Lab1_InLabUnitTests", "CPSC259_2017W1_Lab1_InLabUnitTests\CPSC259_2017W1_Lab1_InLabUnitTests.vcxproj", "{0AA8E1EF-D50C-4BD8-9DE0-5FF9C4D8E3D8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7B32EC31-3B59-4497-B6B4-286861B665CD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7B32EC31-3B59-4497-B6B4-286861B665CD}.Debug|Win32.Build.0 = Debug|Win32
+		{7B32EC31-3B59-4497-B6B4-286861B665CD}.Release|Win32.ActiveCfg = Release|Win32
+		{7B32EC31-3B59-4497-B6B4-286861B665CD}.Release|Win32.Build.0 = Release|Win32
+		{0AA8E1EF-D50C-4BD8-9DE0-5FF9C4D8E3D8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0AA8E1EF-D50C-4BD8-9DE0-5FF9C4D8E3D8}.Debug|Win32.Build.0 = Debug|Win32
+		{0AA8E1EF-D50C-4BD8-9DE0-5FF9C4D8E3D8}.Release|Win32.ActiveCfg = Release|Win32
+		{0AA8E1EF-D50C-4BD8-9DE0-5FF9C4D8E3D8}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

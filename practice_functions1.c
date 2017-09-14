@@ -18,11 +18,10 @@ int main (void)
 
 	int x, n;
 
-	printf("Enter an integer base and an exponent: \n\n");
-	scanf("%d, %d", &x, &n);
+	printf("Enter an integer base and an exponent:");
+	scanf("%d %d", &x, &n);
 
-	x_to_the_n( x, n);
-
+	printf("%ld\n\n", x_to_the_n( x, n));
 }
 
 long x_to_the_n( int x, int n)

@@ -1,44 +1,45 @@
 /*
 File:				  lab1_inlab_exercises.c
-Purpose:			Exercises for lab 1
-Author:			  Your names
-Student #s:		12345678 and 12345678
-CS Accounts:  a1a1 and b2b2
-Date:				  Add the date here
-*/
+	Purpose : Exercises for lab 1
+	Author : Your names
+	Student #s : 12345678 and 12345678
+	CS Accounts : a1a1 and b2b2
+	Date : Add the date here
+	* /
 
-/* Preprocessor directives */
+	/* Preprocessor directives */
 #include "lab1_inlab_exercises.h"
 #include <stdlib.h> // For system command
 #include <stdio.h>
 
-/*
-Try to avoid using numbers in code.  Programmers will often call
-numbers in your code 'magic numbers'.  We avoid using magic numbers
-because it is easier to debug code that doesn't use them.
-Define and use a constant like this instead: #define CONSTANT_NAME value
-*/
+	/*
+	Try to avoid using numbers in code.  Programmers will often call
+	numbers in your code 'magic numbers'.  We avoid using magic numbers
+	because it is easier to debug code that doesn't use them.
+	Define and use a constant like this instead: #define CONSTANT_NAME value
+	*/
 #define SOME_CONSTANT 10
 
-/*
-Main function drives the program.  Every C program must have one and
-only one main function.  A project will not compile without one.
-PRE:    NULL (no pre-conditions)
-POST:	 NULL (no side-effects)
-RETURN: IF the program exits correctly
-THEN 0 ELSE 1
-*/
-int main(void)
+	/*
+	Main function drives the program.  Every C program must have one and
+	only one main function.  A project will not compile without one.
+	PRE:    NULL (no pre-conditions)
+	POST:	 NULL (no side-effects)
+	RETURN: IF the program exits correctly
+	THEN 0 ELSE 1
+	*/
+	int main(void)
 {
-  /* Start every function with a list of variables */
+	/* Start every function with a list of variables */
 
-  /* Then start doing things, like invoking functions and assigning
-  their return values to variables */
+	/* Then start doing things, like invoking functions and assigning
+	their return values to variables */
+		char string[] = "a nut for a jar of tuna";
+		is_palindrome(string);
 
-
-  /* The system command forces the system to pause before closing executable window */
-  system("pause");
-  return 0;
+	/* The system command forces the system to pause before closing executable window */
+	system("pause");
+	return 0;
 }
 
 /*
@@ -57,11 +58,11 @@ RETURN: N/A
 */
 void reverse_array(int array[], int length) {
 
-  // Implement this function here
+	// Implement this function here
 	int temp;
 	int j = length - 1;
 
-	for (int i = 0; i < length/2; i++) {
+	for (int i = 0; i < length / 2; i++) {
 		temp = array[i];
 		array[i] = array[j];
 		array[j] = temp;
@@ -85,8 +86,8 @@ int length(const char string[])
 	for (int i = 0; string[i] != '\0'; i++) {
 		count++;
 	}
-		
-  return count;
+
+	return count;
 }
 
 /*
@@ -109,8 +110,8 @@ int count_letters(const char string[], char letter)
 			count++;
 		}
 	}
-		return count;
-	
+	return count;
+
 }
 
 /*
@@ -132,24 +133,19 @@ ELSE IF string is not a palindrome THEN 0
 int is_palindrome(const char string[]) {
 
 
-  // This implementation is only partly correct
-  int string_length = length(string);
-  int i = 0, j = string_length - 1;
-  for (i = 0; i < j; ++i, --j) {
-	  if (string[i] != string[j]) {
-		  if (string[i] == ' ') {
-			  i++;
-			  j++;
-		  }
-		  else if (string[j] == ' ') {
-			  j--;
-			  i--;
-		  }
-		  else {
-			  return 0;
-		  }
-	  }
-  }
-  return 1;
+	// This implementation is only partly correct
+	int string_length = length(string);
+	int i = 0, j = string_length - 1;
+	for (i = 0; i < j; ++i, --j) {
+		if (string[i] != string[j]) {
+			if (string[i] == ' ')
+				j++;
+			else if (string[j] == ' ')
+				i--;
+			else
+				return 0;
+		}
+	}
+	return 1;
 
 }
